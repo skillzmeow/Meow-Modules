@@ -3,7 +3,7 @@ from asyncio import sleep
 
 @loader.tds 
 class NameMod(loader.Module):
-	"Upd со списками мазефака by @skillzmew и @Y4sperMaglot"
+	"Upd со списками мазефака by @skillzmeow и @Y4sperMaglot"
 	strings = {'name':'MeowMagicUPD'}
 	async def client_ready(self, client, db):
 		self.client = client 
