@@ -17,8 +17,9 @@ class NameMod(loader.Module):
 	    """Модуль для проверки зарплаты"""
 	    business = ["Мой бизнес", "Мой генератор", "Мой сад", "Моя ферма"]
 	    sleeplist = [3, 3, 3, 0]
-	    for x in business:
+    	    for x in business:
 	        for i in sleeplist:
 	            await msg.client.send_message(msg.to_id,(str(x)))
 	            await sleep (i)
+                    break 
 	    await msg.client.send_message(msg.to_id, "Увидел дохуя денег? Можешь даже не просить у меня их.")
