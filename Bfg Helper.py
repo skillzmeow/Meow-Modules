@@ -4,7 +4,7 @@ from asyncio import sleep
 @loader.tds 
 class NameMod(loader.Module):
 	"Модуль для копания материи"
-	strings = {'name':'Bfg Helper'}
+	strings = {'name':'BfgHelper'}
 	async def matericmd(self, msg):
 	    await msg.client.send_message(msg.to_id, "Ща покопаем материю, нахуй")
 	    for _ in range (11):
