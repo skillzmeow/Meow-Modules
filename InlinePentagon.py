@@ -19,7 +19,7 @@ class FirstInlineMod(loader.Module):
 	strings = {
 	"name": "InlinePentagon", 
 	"hackd": "<b>Pentagon was hacked!</b>✅",
-	"hackd1": "🕵Hacking Pentagon\n📊Condition:",
+	"hackd1": "👮Hacking Pentagon\n📊Condition:",
 	}
 	strings_ru = {
 	"hackd": "<b>Пентагон успешно взломан!✅</b>",
