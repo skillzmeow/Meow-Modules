@@ -22,7 +22,7 @@ class PingerBlyaMod(loader.Module):
 	    pidor = self.strings("pinger")
 	    pig = random.randint(30, 45000)
 	    rofl = random.randint(100, 999)
-	    await utils.answer(message, "🐻 Bear with us while ping is checking... ")
+	    await utils.answer(message, "🐻 <code>Bear with us while ping is checking...</code>")
 	    await sleep (0.2)
-	    await utils.answer(message, f"{pidor} {pig}.{rofl} <b>ms</b>")
+	    await utils.answer(message, f"{pidor} <code>{pig}.{rofl}</code> <b>ms</b>")
 	
