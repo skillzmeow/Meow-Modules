@@ -1,4 +1,4 @@
-__version__ = (1,0,0)
+__version__ = (2,0,0)
 #module by:
 #  sss   k  k  i l     l     333
 # s      k k     l     l        3
@@ -18,14 +18,14 @@ from telethon.tl.types import Message
 class FirstInlineMod(loader.Module):
 	strings = {
 	"name": "InlinePentagon", 
-	"hackd": "Pentagon was hacked.✅",
-	"hackd1": "🥷🏼Hacking Pentagon\nCondition:",
+	"hackd": "<b>Pentagon was hacked!</b>✅",
+	"hackd1": "🕵Hacking Pentagon\n📊Condition:",
 	}
 	strings_ru = {
 	"hackd": "<b>Пентагон успешно взломан!✅</b>",
-	"hackd1": "🥷🏼Взламываю Пентагон\nСостояние:",
+	"hackd1": "👮Взламываю Пентагон\n📊Состояние:",
 	}
-	"""Какой-то тупой модуль"""
+	"""Модуль для взлома пентагона в инлайне"""
 	async def ipencmd(self, message:Message):
 		"""Стань настоящим хакером!"""
 		ebal = self.strings("hackd1")
@@ -33,7 +33,7 @@ class FirstInlineMod(loader.Module):
 		message,
 		[f"<b>{ebal} {x}%</b>" for x in range(0, 100, 5)]
 		+ [self.strings("hackd")],
-		interval=1,
+		interval=0.7,
 		inline=True,
 	)
 	
