@@ -25,7 +25,8 @@ class BenTalksMod(loader.Module):
 		args = utils.get_args_raw(message)
 		lol = ["Yes.", "No.", "Ho ho ho..."]
 		rand = random.choice(lol)
-		fuckwar = await self.inline.form(message=utils.get_chat_id(message), text = "секунду...", reply_markup={"text": "BEN", "callback": devnull})
+                await message.delete()
+                fuckwar = await self.inline.form(message=utils.get_chat_id(message), text = "секунду...", reply_markup={"text": "BEN", "callback": devnull})
 		await fuckwar.edit("📞 <b>Звоним Бэну...</b>")
 		await sleep (1)
 		war = ["1", "2", "3"]
